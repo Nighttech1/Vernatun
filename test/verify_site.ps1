@@ -20,7 +20,9 @@ $checks = @(
 )
 
 $mustNot = @(
-    'gallery/7.jpg'
+    'gallery/7.jpg',
+    'http://127.0.0.1',
+    '#region agent log'
 )
 
 $failed = 0

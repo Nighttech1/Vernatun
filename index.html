@@ -42,11 +42,6 @@
       },
     };
   </script>
-  <script>
-// #region agent log
-fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'5a341b'},body:JSON.stringify({sessionId:'5a341b',location:'index.html:head',message:'Head parsed',data:{},timestamp:Date.now(),runId:'run3',hypothesisId:'E'})}).catch(()=>{});
-// #endregion agent log
-  </script>
   <style>
     body {
       background-color: #F9F6F0;
@@ -474,24 +469,8 @@ fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{metho
   </div>
 
   <script>
-// #region agent log
-fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'5a341b'},body:JSON.stringify({sessionId:'5a341b',location:'index.html:body_end',message:'Body end script started',data:{},timestamp:Date.now(),runId:'run3',hypothesisId:'E'})}).catch(()=>{});
-// #endregion agent log
-// #region agent log
-window.addEventListener('error', function(e) {
-  fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'5a341b'},body:JSON.stringify({sessionId:'5a341b',location:'index.html:onerror',message:'Global error caught',data:{msg:e.message, line:e.lineno},timestamp:Date.now(),runId:'run2',hypothesisId:'A'})}).catch(()=>{});
-});
-// #endregion agent log
-  </script>
-  <script>
-// #region agent log
-fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'5a341b'},body:JSON.stringify({sessionId:'5a341b',location:'index.html:script_start',message:'Main script started',data:{},timestamp:Date.now(),runId:'run2',hypothesisId:'A'})}).catch(()=>{});
-// #endregion agent log
     /** Показать PNG-логотип, если файл существует (иначе остаётся SVG). */
     (function () {
-// #region agent log
-fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'5a341b'},body:JSON.stringify({sessionId:'5a341b',location:'index.html:logo_script',message:'Logo script started',data:{},timestamp:Date.now(),runId:'run2',hypothesisId:'D'})}).catch(()=>{});
-// #endregion agent log
       const img = new Image();
       img.onload = function () {
         document.querySelectorAll('#logo-png, #hero-logo-png').forEach(function (el) {
@@ -507,9 +486,6 @@ fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{metho
     })();
 
     document.addEventListener('alpine:init', function () {
-// #region agent log
-fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'5a341b'},body:JSON.stringify({sessionId:'5a341b',location:'index.html:alpine_init',message:'Alpine init triggered',data:{},timestamp:Date.now(),runId:'run2',hypothesisId:'B'})}).catch(()=>{});
-// #endregion agent log
       Alpine.data('lightbox', function () {
         return {
           active: false,
@@ -609,9 +585,6 @@ fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{metho
 
     /** Scroll reveal */
     (function () {
-// #region agent log
-fetch('http://127.0.0.1:7867/ingest/69397697-76cd-4a43-ab3e-c53f7c58d472',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'5a341b'},body:JSON.stringify({sessionId:'5a341b',location:'index.html:scroll_reveal',message:'Scroll reveal initialized',data:{},timestamp:Date.now(),runId:'post-fix',hypothesisId:'C'})}).catch(()=>{});
-// #endregion agent log
       var els = document.querySelectorAll('.reveal');
       if (!('IntersectionObserver' in window)) {
         els.forEach(function (el) { el.classList.add('reveal-visible'); });
