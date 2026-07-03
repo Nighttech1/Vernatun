@@ -12,6 +12,7 @@ $checks = @(
     'images/icon.png',
     'og:title',
     'og:description',
+    'Vernatun Armenian Club',
     'gallery/5.jpg',
     'gallery/6.jpg',
     'openLb(',
