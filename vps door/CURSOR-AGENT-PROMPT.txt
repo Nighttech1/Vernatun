@@ -1,0 +1,16 @@
+Ты работаешь в проекте на Windows; деплой и команды на VPS — через SSH.
+
+Перед любой выкладкой на сервер:
+1) В PowerShell из корня этого репозитория выполни (с точкой в начале строки):
+   . ".\vps door\load-ssh-env.ps1"
+   Если скрипт скажет, что нет local-файла — остановись и опиши пользователю, что нужен файл vps door\set-vernatun-ssh-env.local.ps1 (скопировать с EXAMPLE и заполнить).
+
+2) Проверь переменные (не выводи значения ключей в чат целиком):
+   Test-Path -LiteralPath $env:VERNATUN_SSH_KEY
+   echo $env:VERNATUN_SSH_USER $env:VERNATUN_SSH_HOST $env:VERNATUN_REMOTE_BOT_DIR
+
+3) Для копирования файлов на сервер используй ssh/scp с ключом -i $env:VERNATUN_SSH_KEY и пользователем $env:VERNATUN_SSH_USER@$env:VERNATUN_SSH_HOST. Удалённый каталог — $env:VERNATUN_REMOTE_BOT_DIR (или подкаталоги).
+
+4) Если в этом проекте лежат скрипты деплоя из Vernatun (restart-bot.ps1 и т.д.) — вызывай их из корня репозитория после load-ssh-env.
+
+Не утверждай, что деплой выполнен, если ssh/scp завершился с ошибкой; приведи текст ошибки.

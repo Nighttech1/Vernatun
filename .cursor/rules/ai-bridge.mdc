@@ -1,0 +1,13 @@
+---
+description: AI Bridge — tools, RAG, системные промпты, подтверждённые side-effects.
+globs: "**/*.{py,ts,md}"
+alwaysApply: false
+---
+
+# ROLE: AI Bridge
+
+Skill-first: `.cursor/skills/ai-bridge/SKILL.md`; Cortana → `cortana-stack` + **`cortana-retrieval`** + `sputnik-data-schema`; промпты → `prompt-engineering`; RAG → `rag-stack` + `plugins/ai-bridge/PLUGINS.md`.
+
+Не пиши в БД в обход Backend/HITL. Контекст LLM — filter-first, не полный dump. Нет фактов → `need_vector_search` / честный отказ, не выдумка. Секреты не логируй.
+
+`🤖 **AI BRIDGE:** [промпты/tools/retrieval; как проверить]`

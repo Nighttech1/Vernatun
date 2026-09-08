@@ -1,0 +1,87 @@
+---
+description: Портативная сборка Flutter и локальная раздача IT GIP. Использовать при запросах «собери», «сборка», «деплой», «раздай локально».
+globs: *
+alwaysApply: false
+---
+# Сборка и локальная раздача IT GIP (портативный Flutter)
+
+В проекте используется **портативный** Flutter: SDK и Pub cache лежат в `d:\Applications\`, в PATH по умолчанию их нет. Команды `flutter` и `dart` нужно запускать **после настройки окружения**.
+
+## Пути (не менять)
+
+| Что | Путь |
+|-----|------|
+| Корень проекта | `d:\Applications\IT_GIP` |
+| Flutter SDK | `d:\Applications\flutter\flutter_windows_3.38.10-stable\flutter` |
+| Pub cache | `d:\Applications\Pub` |
+| Flutter-приложение | `d:\Applications\IT_GIP\app` |
+| Выход web-сборки | `d:\Applications\IT_GIP\app\build\web` |
+
+## Как собрать
+
+1. **Из корня IT_GIP** в PowerShell выполнить скрипт проверки сборки (он сам выставит `FLUTTER_ROOT`, `PATH`, `PUB_CACHE` и запустит в `app/`: pub get, analyze, test, build web):
+   ```powershell
+   cd "d:\Applications\IT_GIP"
+   .\scripts\verify_build.ps1
+   ```
+   Для сборки только APK: `.\scripts\verify_build.ps1 -Apk`
+
+2. **Либо вручную** (в той же сессии сначала окружение, потом команды):
+   ```powershell
+   cd "d:\Applications\IT_GIP"
+   .\scripts\set_env.ps1
+   cd app
+   flutter pub get
+   flutter analyze
+   flutter test
+   flutter build web --no-tree-shake-icons --pwa-strategy=none
+   ```
+
+Важно: команды `flutter`/`dart` выполнять **после** `set_env.ps1` или внутри `verify_build.ps1`; иначе «flutter не найден». Флаг `--pwa-strategy=none` уменьшает «залипание» старого JS при локальной раздаче (service worker).
+
+**Если `verify_build.ps1` падает на `flutter analyze`** (есть предупреждения/info): для деплоя достаточно только сборки. В той же сессии выполнить:
+```powershell
+$env:FLUTTER_ROOT = "d:\Applications\flutter\flutter_windows_3.38.10-stable\flutter"
+$env:PATH = "$env:FLUTTER_ROOT\bin;" + $env:PATH
+$env:PUB_CACHE = "d:\Applications\Pub"
+cd "d:\Applications\IT_GIP\app"
+flutter pub get
+flutter build web --no-tree-shake-icons --pwa-strategy=none
+```
+
+## Как раздать сборку локально
+
+После успешного `flutter build web` артефакты лежат в `app\build\web`. Раздача через HTTP:
+
+```powershell
+cd "d:\Applications\IT_GIP\app\build\web"
+python -m http.server 8080
+```
+
+Открыть в браузере: **http://localhost:8080**
+
+(Если нужен другой порт — заменить `8080` на нужный.)
+
+## Деплой на сервер
+
+Скрипт `.\scripts\deploy_web.ps1` собирает web и при указании сервера копирует артефакты по SCP:
+
+```powershell
+cd "d:\Applications\IT_GIP"
+# Только сборка:
+.\scripts\deploy_web.ps1
+
+# Сборка и выкладка (нужны OpenSSH и доступ по ключу/паролю):
+.\scripts\deploy_web.ps1 -Server "user@host" -Path "/var/www/html/it-gip"
+
+# Только выкладка (сборка уже есть):
+.\scripts\deploy_web.ps1 -DeployOnly -Server "user@host" -Path "/var/www/html/it-gip"
+```
+
+На сервере в `Path` должен быть каталог, куда копируются файлы из `app\build\web\*` (index.html, main.dart.js, assets/ и т.д.). Веб-сервер (nginx, Apache) должен отдавать этот каталог для нужного виртуального хоста.
+
+## Краткий чеклист для агента
+
+- Сборка: запустить `.\scripts\verify_build.ps1` или `.\scripts\deploy_web.ps1` из `d:\Applications\IT_GIP` (PowerShell).
+- Раздача локально: `python -m http.server 8080` из `d:\Applications\IT_GIP\app\build\web`, URL http://localhost:8080.
+- Деплой: `.\scripts\deploy_web.ps1 -Server user@host -Path /remote/path` (параметры задаёт пользователь).

@@ -1,0 +1,53 @@
+---
+description: Организация шаблонной команды агентов. Универсальная KB плюс точка расширения новыми агентами.
+globs: "*"
+alwaysApply: true
+---
+
+# Организация команды
+
+Карта: `docs/TEAM_ARCHITECTURE.md`.
+Реестр: `.cursor/registry/agents.md`.
+Цикл: `docs/CLIENT_ORCHESTRATOR_CYCLE.md` + `.cursor/prompts/start-client-orchestrator-cycle.md`.
+Промты запуска: файл `promts`.
+База знаний: `knowledge/` (универсальная; не читать чужой домен).
+
+## Два контура
+
+1. Инженерный: Оркестратор → Архитектор → специалисты → Тестировщик → Фиксер → Деплоер
+2. Приёмка: Клиент (снаружи команды, финальный вердикт пользователю)
+
+## Базовая команда Оркестратора
+
+Клиент, Оркестратор, Архитектор, Фронтендер, Motion, Бекендер, Тестировщик, Фиксер, Деплоер.
+
+Профиль по умолчанию: **Sputnik Life OS + Cortana** (Flutter/React, Telegram HITL, SQLite sync, LangGraph). Контекст Cortana — skill `cortana-retrieval` (filter → vector), не отдельный агент. Motion/WebGL — только если Архитектор включил в chain.
+
+## Skill-first
+
+Каждая роль читает:
+1. своё `.cursor/rules/<role>.mdc`
+2. `SKILL.md` из `.cursor/skills/`
+3. плагины `plugins/<role>/` если есть
+4. оболочку `knowledge/engineering/roles/<role>.md`
+5. `knowledge/area_sputnik/` **текущего** проекта — домен Cortana/Sputnik
+6. толстые `knowledge/engineering/sources/` — только если скилла мало
+
+Не открывать все PDF/sources «на всякий случай».
+
+## Расширяемость
+
+Сюда складываем новых агентов и новые skills по мере нужды в проектах.
+
+Чеклист нового агента:
+1. `.cursor/rules/<role>.mdc`
+2. `.cursor/skills/<name>/SKILL.md`
+3. запись в `.cursor/registry/agents.md`
+4. оболочка `knowledge/engineering/roles/<role>.md` при необходимости
+5. для Motion — `motion.mdc` + `web-motion-engine`
+
+После регистрации агент — часть команды Оркестратора. Подключать только когда задача этого требует.
+
+## Журнал memory/
+
+Шаблоны: `memory/_templates/`. Инженеров звать только при `chain.md`. Закрытие `C-*` только с guard. Папки тикетов после done не удалять.

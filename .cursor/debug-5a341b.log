@@ -1,0 +1,124 @@
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":356},"timestamp":1778599405134,"runId":"run1","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: lightbox is not defined","line":5},"timestamp":1778599405159,"runId":"run1","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: caption is not defined","line":5},"timestamp":1778599405159,"runId":"run1","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: active is not defined","line":5},"timestamp":1778599405159,"runId":"run1","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: src is not defined","line":5},"timestamp":1778599405159,"runId":"run1","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: caption is not defined","line":5},"timestamp":1778599405159,"runId":"run1","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: caption is not defined","line":5},"timestamp":1778599405159,"runId":"run1","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":362},"timestamp":1778599479045,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599479082,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599479082,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599479082,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599479083,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599479083,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599479083,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":362},"timestamp":1778599492453,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: lightbox is not defined","line":5},"timestamp":1778599492478,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: caption is not defined","line":5},"timestamp":1778599492478,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: active is not defined","line":5},"timestamp":1778599492478,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: src is not defined","line":5},"timestamp":1778599492478,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: caption is not defined","line":5},"timestamp":1778599492478,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: caption is not defined","line":5},"timestamp":1778599492478,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: openLb is not defined","line":5},"timestamp":1778599495442,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: openLb is not defined","line":5},"timestamp":1778599498657,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: openLb is not defined","line":5},"timestamp":1778599498745,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught ReferenceError: openLb is not defined","line":5},"timestamp":1778599499410,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599565408,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599565462,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":370},"timestamp":1778599565502,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599565526,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599565526,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599565526,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599565526,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599565526,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599565526,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599573257,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599573309,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":370},"timestamp":1778599573318,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599573484,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599573484,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599573485,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599573485,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599573485,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599573485,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599578061,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599578113,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":370},"timestamp":1778599578118,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599578136,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599578136,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599578137,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599578137,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599578137,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599578137,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599582796,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599582846,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":370},"timestamp":1778599582852,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599582878,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599582878,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599582878,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599582878,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599582879,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599582878,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599583422,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599583473,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":370},"timestamp":1778599583480,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583506,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583506,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583506,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583506,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583507,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583507,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599583830,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599583881,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":370},"timestamp":1778599583888,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583910,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583911,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583911,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583912,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583912,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599583911,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599584030,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599584081,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Uncaught SyntaxError: Unexpected end of input","line":370},"timestamp":1778599584088,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599584111,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599584111,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599584111,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599584112,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599584112,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:onerror","message":"Global error caught","data":{"msg":"Script error.","line":0},"timestamp":1778599584112,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778599943642,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778599943695,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:script_start","message":"Main script started","data":{},"timestamp":1778599943738,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:logo_script","message":"Logo script started","data":{},"timestamp":1778599943738,"runId":"run2","hypothesisId":"D"}
+{"sessionId":"5a341b","location":"index.html:scroll_reveal","message":"Scroll reveal initialized","data":{},"timestamp":1778599943738,"runId":"post-fix","hypothesisId":"C"}
+{"sessionId":"5a341b","location":"index.html:alpine_init","message":"Alpine init triggered","data":{},"timestamp":1778599943740,"runId":"run2","hypothesisId":"B"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778600423084,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778600423136,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:script_start","message":"Main script started","data":{},"timestamp":1778600423142,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:scroll_reveal","message":"Scroll reveal initialized","data":{},"timestamp":1778600423142,"runId":"post-fix","hypothesisId":"C"}
+{"sessionId":"5a341b","location":"index.html:logo_script","message":"Logo script started","data":{},"timestamp":1778600423142,"runId":"run2","hypothesisId":"D"}
+{"sessionId":"5a341b","location":"index.html:alpine_init","message":"Alpine init triggered","data":{},"timestamp":1778600423153,"runId":"run2","hypothesisId":"B"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778600432587,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778600432642,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:script_start","message":"Main script started","data":{},"timestamp":1778600432648,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:logo_script","message":"Logo script started","data":{},"timestamp":1778600432648,"runId":"run2","hypothesisId":"D"}
+{"sessionId":"5a341b","location":"index.html:scroll_reveal","message":"Scroll reveal initialized","data":{},"timestamp":1778600432648,"runId":"post-fix","hypothesisId":"C"}
+{"sessionId":"5a341b","location":"index.html:alpine_init","message":"Alpine init triggered","data":{},"timestamp":1778600432650,"runId":"run2","hypothesisId":"B"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778600571288,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778600571329,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:script_start","message":"Main script started","data":{},"timestamp":1778600571335,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:logo_script","message":"Logo script started","data":{},"timestamp":1778600571336,"runId":"run2","hypothesisId":"D"}
+{"sessionId":"5a341b","location":"index.html:scroll_reveal","message":"Scroll reveal initialized","data":{},"timestamp":1778600571336,"runId":"post-fix","hypothesisId":"C"}
+{"sessionId":"5a341b","location":"index.html:alpine_init","message":"Alpine init triggered","data":{},"timestamp":1778600571339,"runId":"run2","hypothesisId":"B"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778600944057,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778600944098,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:script_start","message":"Main script started","data":{},"timestamp":1778600944103,"runId":"run2","hypothesisId":"A"}
+{"sessionId":"5a341b","location":"index.html:logo_script","message":"Logo script started","data":{},"timestamp":1778600944104,"runId":"run2","hypothesisId":"D"}
+{"sessionId":"5a341b","location":"index.html:scroll_reveal","message":"Scroll reveal initialized","data":{},"timestamp":1778600944104,"runId":"post-fix","hypothesisId":"C"}
+{"sessionId":"5a341b","location":"index.html:alpine_init","message":"Alpine init triggered","data":{},"timestamp":1778600944105,"runId":"run2","hypothesisId":"B"}
+{"sessionId":"5a341b","location":"index.html:head","message":"Head parsed","data":{},"timestamp":1778602309142,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:logo_script","message":"Logo script started","data":{},"timestamp":1778602309239,"runId":"run2","hypothesisId":"D"}
+{"sessionId":"5a341b","location":"index.html:body_end","message":"Body end script started","data":{},"timestamp":1778602309198,"runId":"run3","hypothesisId":"E"}
+{"sessionId":"5a341b","location":"index.html:alpine_init","message":"Alpine init triggered","data":{},"timestamp":1778602309240,"runId":"run2","hypothesisId":"B"}
+{"sessionId":"5a341b","location":"index.html:scroll_reveal","message":"Scroll reveal initialized","data":{},"timestamp":1778602309239,"runId":"post-fix","hypothesisId":"C"}
+{"sessionId":"5a341b","location":"index.html:script_start","message":"Main script started","data":{},"timestamp":1778602309238,"runId":"run2","hypothesisId":"A"}

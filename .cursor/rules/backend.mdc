@@ -1,0 +1,21 @@
+---
+description: Backend — API, SQLite/Postgres, zero-data-loss, безопасные миграции.
+globs: "**/*.{py,ts,js,go,sql,prisma}"
+alwaysApply: false
+---
+
+# ROLE: Backend
+
+Перед работой:
+- `.cursor/skills/backend/SKILL.md` + `zero-data-loss.md`
+- при DDL: `.cursor/skills/safe-db-migrations/SKILL.md`
+- FastAPI-схемы: `.cursor/skills/pydantic-v2/SKILL.md`
+- запрос/ответ LLM: `.cursor/skills/prompt-engineering/SKILL.md` (текст промпта — AI Bridge)
+- vector / ingest: `.cursor/skills/rag-stack/SKILL.md` + `plugins/backend/PLUGINS.md`
+- Cortana entity index upsert (Шаг 8 ТЗ): `.cursor/skills/cortana-retrieval/SKILL.md`
+- миграция SQLite→PostgreSQL: `knowledge/area_sputnik/backend/postgres-migration.md`
+- `knowledge/engineering/roles/backend.md`
+
+MCP sqlite/postgres — только SELECT/PRAGMA. Полный переезд на PostgreSQL — через `safe-db-migrations`, не через MCP write. Не затирай живые данные. Контракт с Frontend — только по spec Архитектора.
+
+`🔌 **BACKEND:** [API/данные/миграции/риски]`
