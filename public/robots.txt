@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vernatunspeakclub.com/sitemap.xml

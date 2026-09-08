@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ru" data-root="/">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="О московском армянском разговорном клубе Вернатун: форматы встреч, атмосфера и ответы на вопросы." />
+  <title>О нас — Вернатун</title>
+  <link rel="canonical" href="https://vernatunspeakclub.com/about.html" />
+  <script src="/js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+</head>
+<body class="paper-grain min-h-screen antialiased text-ink" x-data="lightbox()" @keydown.escape.window="close()">
+  <div id="site-header"></div>
+  <script src="/js/site.js"></script>
+  <main>
+    <!-- О клубе -->
+    <section id="club" class="border-b border-mist bg-white/40 py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <h1 class="font-display text-3xl font-bold text-azure sm:text-4xl">О нашем клубе</h1>
+          <p class="mt-4 text-lg leading-relaxed text-ink/75">
+            Вернатун — это уютное пространство для общения, где мы встречаемся, чтобы поговорить на родном языке, обсудить актуальные темы, поиграть в настольные игры и просто приятно провести время в хорошей компании.
+          </p>
+          <p class="mt-4 text-lg leading-relaxed text-ink/75">
+            Мы создаем теплую и дружескую атмосферу, где каждый может найти новых друзей, попрактиковать армянский язык и отдохнуть от городской суеты.
+          </p>
+        </div>
+        <div class="mt-12 grid gap-6 sm:grid-cols-3">
+          <article class="reveal rounded-lg border border-azure/12 bg-parchment/80 p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta">Атмосфера</p>
+            <h3 class="mt-2 font-display text-xl text-azure">Дружеская среда</h3>
+            <p class="mt-3 text-sm leading-relaxed text-ink/70">Открытое общение, новые знакомства и взаимная поддержка в неформальной обстановке.</p>
+          </article>
+          <article class="reveal rounded-lg border border-azure/12 bg-parchment/80 p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta">Практика</p>
+            <h3 class="mt-2 font-display text-xl text-azure">Живой язык</h3>
+            <p class="mt-3 text-sm leading-relaxed text-ink/70">Разговорная практика на армянском языке для любого уровня владения.</p>
+          </article>
+          <article class="reveal rounded-lg border border-azure/12 bg-parchment/80 p-6 shadow-card">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta">Досуг</p>
+            <h3 class="mt-2 font-display text-xl text-azure">Игры и отдых</h3>
+            <p class="mt-3 text-sm leading-relaxed text-ink/70">Увлекательные настольные игры, кофе и отличное настроение в компании единомышленников.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Форматы -->
+    <section id="formats" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal text-center">
+          <h2 class="font-display text-3xl font-bold text-azure sm:text-4xl">Форматы встреч</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-ink/70">Разные форматы встреч — в каждом есть место для приятного общения.</p>
+        </div>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal flex flex-col rounded-lg border border-azure/15 bg-white/70 shadow-card backdrop-blur-sm overflow-hidden">
+            <div class="p-7 flex-1 flex flex-col">
+              <div class="h-px w-12 bg-sungold" aria-hidden="true"></div>
+              <h3 class="mt-5 font-display text-2xl text-azure">Разговорные встречи</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink/75">Живой язык и культура речи: обсуждаем интересные темы, делимся новостями и просто общаемся в теплой компании без давления и формальностей.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-terracotta">Диалог</p>
+            </div>
+            <div
+              class="format-photo-wrap relative border-t border-azure/10"
+              role="button"
+              tabindex="0"
+              @click="openLb('images/format-01.png', 'Разговорные встречи')"
+              @keydown.enter="openLb('images/format-01.png', 'Разговорные встречи')"
+            >
+              <img src="images/format-01.png" alt="Разговорные встречи" class="w-full h-48 object-cover transition" loading="lazy" />
+              <span class="zoom-badge absolute right-2 top-2 rounded-full bg-ink/45 p-1.5 text-white backdrop-blur-sm" aria-hidden="true">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+              </span>
+            </div>
+          </article>
+          <article class="reveal flex flex-col rounded-lg border border-azure/15 bg-white/70 shadow-card backdrop-blur-sm overflow-hidden">
+            <div class="p-7 flex-1 flex flex-col">
+              <div class="h-px w-12 bg-sungold" aria-hidden="true"></div>
+              <h3 class="mt-5 font-display text-2xl text-azure">Настольные игры</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink/75">Играем в популярные настолки, смеемся и отлично проводим время. Отличный способ расслабиться, проявить смекалку и завести новых друзей.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-terracotta">Игры</p>
+            </div>
+            <div
+              class="format-photo-wrap relative border-t border-azure/10"
+              role="button"
+              tabindex="0"
+              @click="openLb('images/format-02.jpg', 'Настольные игры')"
+              @keydown.enter="openLb('images/format-02.jpg', 'Настольные игры')"
+            >
+              <img src="images/format-02.jpg" alt="Настольные игры" class="w-full h-48 object-cover transition" loading="lazy" />
+              <span class="zoom-badge absolute right-2 top-2 rounded-full bg-ink/45 p-1.5 text-white backdrop-blur-sm" aria-hidden="true">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+              </span>
+            </div>
+          </article>
+          <article class="reveal flex flex-col rounded-lg border border-azure/15 bg-white/70 shadow-card backdrop-blur-sm overflow-hidden">
+            <div class="p-7 flex-1 flex flex-col">
+              <div class="h-px w-12 bg-sungold" aria-hidden="true"></div>
+              <h3 class="mt-5 font-display text-2xl text-azure">Неформальное общение</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink/75">Встречи за чашкой кофе, где главное — это люди. Никаких лекций и сложных форматов, только живой диалог и приятная атмосфера.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-terracotta">Отдых</p>
+            </div>
+            <div
+              class="format-photo-wrap relative border-t border-azure/10"
+              role="button"
+              tabindex="0"
+              @click="openLb('images/format-03.png', 'Неформальное общение')"
+              @keydown.enter="openLb('images/format-03.png', 'Неформальное общение')"
+            >
+              <img src="images/format-03.png" alt="Неформальное общение" class="w-full h-48 object-cover transition" loading="lazy" />
+              <span class="zoom-badge absolute right-2 top-2 rounded-full bg-ink/45 p-1.5 text-white backdrop-blur-sm" aria-hidden="true">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+              </span>
+            </div>
+          </article>
+          <article class="reveal flex flex-col rounded-lg border border-azure/15 bg-white/70 shadow-card backdrop-blur-sm overflow-hidden">
+            <div class="p-7 flex-1 flex flex-col">
+              <div class="h-px w-12 bg-sungold" aria-hidden="true"></div>
+              <h3 class="mt-5 font-display text-2xl text-azure">Спортивные мероприятия</h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-ink/75">Иногда собираемся на волейбол — активный отдых, движение и командный дух вне стен клуба. Присоединяйтесь, когда анонсируем игру в чате.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-terracotta">Спорт</p>
+            </div>
+            <div
+              class="format-photo-wrap relative border-t border-azure/10"
+              role="button"
+              tabindex="0"
+              @click="openLb('images/format-04.jpg', 'Спортивные мероприятия')"
+              @keydown.enter="openLb('images/format-04.jpg', 'Спортивные мероприятия')"
+            >
+              <img src="images/format-04.jpg" alt="Спортивные мероприятия — волейбол" class="w-full h-48 object-cover transition" loading="lazy" />
+              <span class="zoom-badge absolute right-2 top-2 rounded-full bg-ink/45 p-1.5 text-white backdrop-blur-sm" aria-hidden="true">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Медиа -->
+    <section id="atmosphere" class="border-y border-mist bg-white/35 py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal flex flex-col gap-3 text-center sm:text-left">
+          <h2 class="font-display text-3xl font-bold text-azure sm:text-4xl">Атмосфера клуба</h2>
+          <p class="mx-auto max-w-2xl text-ink/70 sm:mx-0">У нас по-простому классно: болтаем, смеёмся, знакомимся. На фото — обычные наши встречи. Жмите, если хотите посмотреть крупнее.</p>
+        </div>
+
+        <div
+          class="reveal mt-10 flex items-center gap-2 sm:gap-4 max-w-5xl mx-auto"
+          x-data="{
+            current: 0,
+            slides: [
+              { src: 'gallery/1.jpg', caption: 'Атмосфера клуба' },
+              { src: 'gallery/2.jpg', caption: 'Атмосфера клуба' },
+              { src: 'gallery/3.jpg', caption: 'Атмосфера клуба' },
+              { src: 'gallery/4.jpg', caption: 'Атмосфера клуба' },
+              { src: 'gallery/5.jpg', caption: 'Атмосфера клуба' },
+              { src: 'gallery/6.jpg', caption: 'Атмосфера клуба' }
+            ],
+            get count() { return this.slides.length; },
+            prev() { this.current = this.current === 0 ? this.count - 1 : this.current - 1; },
+            next() { this.current = this.current === this.count - 1 ? 0 : this.current + 1; }
+          }"
+          x-init="setInterval(() => next(), 5000)"
+        >
+          <button type="button" @click="prev()" class="carousel-nav-btn shrink-0 rounded-full bg-azure/80 p-2 sm:p-3 text-white shadow-card backdrop-blur-md focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold" aria-label="Предыдущее фото">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          </button>
+
+          <div class="relative flex-1 min-w-0 overflow-hidden rounded-xl shadow-card border border-azure/12 bg-parchment">
+            <div class="flex transition-transform duration-500 ease-out" :style="'transform: translateX(-' + (current * 100) + '%)'">
+              <template x-for="(slide, i) in slides" :key="i">
+                <div class="w-full flex-shrink-0">
+                  <div class="gallery-slide-frame cursor-pointer" @click="openLb(slide.src, slide.caption)">
+                    <img
+                      :src="slide.src"
+                      :alt="'Атмосфера клуба ' + (i + 1)"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </template>
+            </div>
+
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+              <template x-for="(slide, i) in slides" :key="'dot-' + i">
+                <button
+                  type="button"
+                  @click="current = i"
+                  :class="current === i ? 'bg-sungold w-6' : 'bg-white/60 hover:bg-white w-2'"
+                  class="h-2 rounded-full transition-all duration-300"
+                  :aria-label="'Фото ' + (i + 1)"
+                ></button>
+              </template>
+            </div>
+          </div>
+
+          <button type="button" @click="next()" class="carousel-nav-btn shrink-0 rounded-full bg-azure/80 p-2 sm:p-3 text-white shadow-card backdrop-blur-md focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold" aria-label="Следующее фото">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="border-t border-mist bg-white/40 py-16 sm:py-20" aria-labelledby="faq-heading">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6">
+        <div class="reveal text-center">
+          <h2 id="faq-heading" class="font-display text-3xl font-bold text-azure sm:text-4xl">Часто задаваемые вопросы</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-ink/70">Ответы для тех, кто только думает присоединиться к клубу.</p>
+        </div>
+
+        <div class="reveal mt-10 space-y-3">
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Подойдёт ли мне клуб, если я знаю только алфавит или совсем немного слов?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Да, конечно! Главное — иметь базовое представление о языке и желание начать говорить. На встречах мы поддерживаем комфортный темп, а ведущие всегда помогут сформулировать мысль или подскажут забытое слово.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>На каком языке ведутся встречи?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Основной язык общения — армянский. Но если вы затрудняетесь, можно переходить на русский, чтобы вам подсказали нужную фразу на армянском. Наша цель — помочь заговорить без стресса.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Как проходят наши офлайн-встречи?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Мы встречаемся 2 раза в неделю в уютной локации. Делимся на небольшие группы по 3–5 человек, чтобы у каждого было достаточно времени высказаться. Каждая встреча имеет тему дня, интерактивные задания или разговорные игры.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Какой вариант армянского языка практикуется в клубе?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">В основном мы практикуем восточноармянский язык. При этом мы всегда рады носителям и изучающим западноармянский — это делает общение ещё более богатым и интересным.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Что делать, если я сильно стесняюсь и боюсь делать ошибки?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Стеснение — это абсолютно нормально! В Вернатуне нет строгих учителей и оценок. Все приходят практиковаться, поэтому ошибаться у нас — естественная и безопасная часть процесса.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Нужно ли готовиться к встрече заранее?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Специальная подготовка не требуется. За 1–2 дня до встречи мы высылаем тему дня и небольшой список полезных слов, чтобы вы могли просмотреть их для уверенности.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Можно ли прийти одному / одной?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Да, большинство наших участников в первый раз приходят в одиночку! Формат встречи помогает легко включиться в беседу и быстро найти новых друзей.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Сколько длится одна встреча?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Каждая встреча длится 3 часа с перерывом на кофе/чай и свободное общение.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Что нужно брать с собой на встречу?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Только хорошее настроение! При желании возьмите блокнот, если любите записывать новые интересные выражения.</p>
+              </div>
+            </div>
+          </details>
+
+          <details class="faq-item group rounded-lg border border-azure/12 bg-parchment/80 shadow-card open:shadow-lift open:border-azure/25">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left font-semibold text-azure transition hover:bg-white/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold rounded-lg">
+              <span>Как записаться на ближайшую встречу?</span>
+              <svg class="faq-chevron h-5 w-5 shrink-0 text-terracotta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="faq-panel">
+              <div class="faq-panel-inner">
+                <p class="border-t border-mist/80 px-5 pb-5 pt-3 text-sm leading-relaxed text-ink/75">Запись на встречи идёт через нашего бота в Telegram — <a href="https://t.me/vernatunbot" target="_blank" rel="noopener noreferrer" class="font-semibold text-azure underline decoration-sungold/60 underline-offset-2 hover:text-terracotta">@vernatunbot</a>. Там можно записаться и узнать актуальные анонсы.</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <div id="site-footer"></div>
+  <script>VernatunChrome.mountRest();</script>
+</body>
+</html>

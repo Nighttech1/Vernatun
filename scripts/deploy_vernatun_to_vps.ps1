@@ -40,9 +40,14 @@ Invoke-Ssh "mkdir -p '$remoteWeb' '$remoteApp/vps door/Vernatun website/nginx' '
 
 $siteItems = @(
     (Join-Path $repoRoot "index.html"),
+    (Join-Path $repoRoot "public\robots.txt"),
+    (Join-Path $repoRoot "public\sitemap.xml"),
+    (Join-Path $repoRoot "favicon.ico"),
     (Join-Path $repoRoot "images"),
     (Join-Path $repoRoot "gallery")
 )
+$materials = Join-Path $repoRoot "materials"
+if (Test-Path $materials) { $siteItems += $materials }
 $videos = Join-Path $repoRoot "videos"
 if (Test-Path $videos) { $siteItems += $videos }
 

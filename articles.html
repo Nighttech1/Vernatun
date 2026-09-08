@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ru" data-root="/">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Статьи клуба Вернатун: как проходят встречи, как начать говорить и какой армянский мы практикуем." />
+  <title>Статьи — Вернатун</title>
+  <link rel="canonical" href="https://vernatunspeakclub.com/articles.html" />
+  <script src="/js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+</head>
+<body class="paper-grain min-h-screen antialiased text-ink" x-data="lightbox()" @keydown.escape.window="close()">
+  <div id="site-header"></div>
+  <script src="/js/site.js"></script>
+  <main>
+    <section class="py-16 sm:py-20">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6">
+        <div class="reveal text-center">
+          <h1 class="font-display text-3xl font-bold text-azure sm:text-4xl">Статьи</h1>
+          <p class="mx-auto mt-3 max-w-2xl text-ink/70">Короткие тексты о том, как устроен клуб и как проще начать говорить. Это не учебник — скорее разговор перед первой встречей.</p>
+        </div>
+        <div class="mt-10">
+          <a href="/articles/esli-stesnyaeshsya.html" class="magazine-row group">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta">Новичкам</p>
+            <p class="font-display text-2xl text-azure group-hover:text-terracotta">Если стесняешься говорить</p>
+            <p class="text-sm text-ink/50">Читать</p>
+          </a>
+          <a href="/articles/kak-prohodit-vstrecha.html" class="magazine-row group">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta">Встреча</p>
+            <p class="font-display text-2xl text-azure group-hover:text-terracotta">Как проходит встреча</p>
+            <p class="text-sm text-ink/50">Читать</p>
+          </a>
+          <a href="/articles/kakoi-armyanskii.html" class="magazine-row group">
+            <p class="text-xs font-bold uppercase tracking-widest text-terracotta">Язык</p>
+            <p class="font-display text-2xl text-azure group-hover:text-terracotta">Какой армянский мы говорим</p>
+            <p class="text-sm text-ink/50">Читать</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script>VernatunChrome.mountRest();</script>
+</body>
+</html>

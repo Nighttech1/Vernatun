@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ru" data-root="/">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Подкасты и разборы для практики армянского языка в клубе Вернатун." />
+  <title>Учебные материалы — Вернатун</title>
+  <link rel="canonical" href="https://vernatunspeakclub.com/materials.html" />
+  <script src="/js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+</head>
+<body class="paper-grain min-h-screen antialiased text-ink" x-data="lightbox()" @keydown.escape.window="close()">
+  <div id="site-header"></div>
+  <script src="/js/site.js"></script>
+  <main>
+    <!-- Учебные материалы -->
+    <section id="materials" class="border-t border-mist py-16 sm:py-20" aria-labelledby="materials-heading">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6">
+        <div class="reveal text-center">
+          <h1 id="materials-heading" class="font-display text-3xl font-bold text-azure sm:text-4xl">Учебные материалы</h1>
+          <p class="mx-auto mt-3 max-w-2xl text-ink/70">Подкасты и разборы для практики армянского — слушайте и следите за текстом.</p>
+        </div>
+
+        <a href="/materials/podcasts/ideal-life/index.html" class="magazine-row group mt-10">
+          <p class="text-xs font-bold uppercase tracking-widest text-terracotta">А2–В1</p>
+          <div>
+            <p class="font-display text-2xl text-azure group-hover:text-terracotta">Культ идеальной жизни и иллюзия соцсетей</p>
+            <p class="mt-2 text-sm leading-relaxed text-ink/70">Подкаст на армянском с русским переводом и подсветкой реплик.</p>
+          </div>
+          <p class="text-sm font-semibold text-azure">Открыть</p>
+        </a>
+      </div>
+    </section>
+
+
+  </main>
+  <div id="site-footer"></div>
+  <script>VernatunChrome.mountRest();</script>
+</body>
+</html>

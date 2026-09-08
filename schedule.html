@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ru" data-root="/">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Календарь встреч клуба Вернатун на сентябрь 2026: разговорный, этника и волейбол." />
+  <title>Расписание — Вернатун</title>
+  <link rel="canonical" href="https://vernatunspeakclub.com/schedule.html" />
+  <script src="/js/tailwind-config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+</head>
+<body class="paper-grain min-h-screen antialiased text-ink" x-data="lightbox()" @keydown.escape.window="close()">
+  <div id="site-header"></div>
+  <script src="/js/site.js"></script>
+  <main>
+    <!-- Расписание -->
+    <section id="calendar" class="py-16 sm:py-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal text-center sm:text-left">
+          <h1 class="font-display text-3xl font-bold text-azure sm:text-4xl">Расписание</h1>
+          <p class="mt-2 max-w-2xl text-ink/70">Сентябрь 2026. Нажмите цветную полоску в календаре — справа появится карточка этой встречи.</p>
+        </div>
+
+        <div class="reveal mt-10 grid items-start gap-6 lg:grid-cols-[minmax(0,1.35fr)_minmax(17rem,22rem)]" x-data="clubCalendar()" x-cloak>
+          <div class="overflow-hidden rounded-xl border border-azure/12 bg-white shadow-card">
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-mist bg-parchment/60 px-4 py-3 sm:px-5">
+              <div class="flex items-center gap-2">
+                <button type="button" @click="prevMonth()" class="rounded-full p-2 text-azure transition hover:bg-azure/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold" aria-label="Предыдущий месяц">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button type="button" @click="nextMonth()" class="rounded-full p-2 text-azure transition hover:bg-azure/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-sungold" aria-label="Следующий месяц">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+                <h3 class="font-display text-xl font-bold text-azure sm:text-2xl" x-text="title"></h3>
+              </div>
+              <div class="flex flex-wrap items-center gap-3 text-[11px] text-ink/65">
+                <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-azure"></span>Разговорный</span>
+                <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-sungold"></span>Этника</span>
+                <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-terracotta"></span>Волейбол</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-7 border-b border-mist bg-white/80 text-center text-[11px] font-semibold uppercase tracking-wider text-ink/50 sm:text-xs">
+              <template x-for="day in weekDays" :key="day">
+                <div class="border-r border-mist/80 py-2 last:border-r-0" x-text="day"></div>
+              </template>
+            </div>
+
+            <div class="grid grid-cols-7 bg-mist/40">
+              <template x-for="(week, wi) in weeks" :key="wi">
+                <template x-for="(cell, di) in week" :key="wi + '-' + di">
+                  <button
+                    type="button"
+                    class="cal-cell cal-day border-b border-r border-mist/80 bg-white p-1 text-left last:border-r-0 sm:p-1.5"
+                    :class="[
+                      cell.inMonth ? '' : 'bg-parchment/50',
+                      cell.hasSelection ? 'is-selected' : '',
+                      cell.events.length ? 'cursor-pointer hover:bg-parchment/80' : 'cursor-default'
+                    ]"
+                    :aria-label="cell.events.length ? ('Встречи ' + cell.date) : ('День ' + cell.date)"
+                    @click="selectDay(cell)"
+                  >
+                    <span
+                      class="inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-semibold sm:text-sm"
+                      :class="cell.isToday ? 'bg-azure text-white' : (cell.inMonth ? 'text-ink' : 'text-ink/35')"
+                      x-text="cell.date"
+                    ></span>
+                    <div class="mt-2 flex flex-col gap-1">
+                      <template x-for="ev in cell.events" :key="ev.id">
+                        <span
+                          class="event-bar block w-full"
+                          :class="barClass(ev.kind, selectedId === ev.id)"
+                          :title="ev.time + ' · ' + ev.title"
+                          @click.stop="selectId(ev.id)"
+                        ></span>
+                      </template>
+                    </div>
+                  </button>
+                </template>
+              </template>
+            </div>
+          </div>
+
+          <aside class="lg:sticky lg:top-24" aria-live="polite">
+            <article
+              class="event-card-enter overflow-hidden rounded-xl border border-azure/12 bg-white shadow-card"
+              x-show="selected"
+              :key="selected ? selected.id : 'empty'"
+            >
+              <img
+                :src="selected && selected.image"
+                :alt="selected ? selected.title : ''"
+                class="h-48 w-full object-cover"
+                width="640"
+                height="320"
+              />
+              <div class="space-y-3 p-5">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider" :class="kindClass(selected && selected.kind)" x-text="selected && selected.kindLabel"></span>
+                  <span class="text-xs font-semibold text-ink/60" x-text="selected && (selected.dateLabel + ' · ' + selected.time)"></span>
+                </div>
+                <h3 class="font-display text-2xl leading-tight text-azure" x-text="selected && selected.title"></h3>
+                <p class="text-sm leading-relaxed text-ink/75" x-text="selected && selected.description"></p>
+                <div class="flex flex-wrap gap-2" x-show="siblings.length > 1">
+                  <template x-for="ev in siblings" :key="'sib-' + ev.id">
+                    <button
+                      type="button"
+                      class="rounded-full border px-2.5 py-1 text-[11px] font-semibold transition"
+                      :class="selectedId === ev.id ? 'border-azure bg-azure text-white' : 'border-azure/20 text-azure hover:border-azure/40'"
+                      @click="selectId(ev.id)"
+                      x-text="ev.time + ' · ' + ev.kindLabel"
+                    ></button>
+                  </template>
+                </div>
+                <a href="https://t.me/vernatunbot" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded bg-terracotta px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-terracotta/90">Записаться в Telegram</a>
+              </div>
+            </article>
+            <div x-show="!selected" class="rounded-xl border border-dashed border-azure/25 bg-white/70 p-6 text-sm leading-relaxed text-ink/70">
+              Выберите день с цветной полоской — здесь откроется карточка встречи.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <div id="site-footer"></div>
+  <script>VernatunChrome.mountRest();</script>
+</body>
+</html>
