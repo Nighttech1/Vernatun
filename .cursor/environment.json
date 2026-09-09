@@ -1,0 +1,17 @@
+{
+  "name": "Vernatun static site",
+  "install": "python3 --version",
+  "terminals": [
+    {
+      "name": "web",
+      "command": "cd /workspace && python3 -m http.server 8080 --bind 0.0.0.0",
+      "description": "Serves the static Vernatun site from the repo root at http://localhost:8080 (mirrors the nginx static setup used on the VPS). Run the guard test with `python3 test/schedule_header_guard.py`."
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 8080
+    }
+  ]
+}
